@@ -7,7 +7,7 @@ if [[ -z "$mac_os_label" ]]; then
     exit 1
 fi
 
-read -p "What is this machine's name (Example: \"ernie\")? " mac_os_name
+read -p "What is this machine's name (Example: \"Gemini\")? " mac_os_name
 if [[ -z "$mac_os_name" ]]; then
     printf "ERROR: Invalid MacOS name.\n"
     exit 1
