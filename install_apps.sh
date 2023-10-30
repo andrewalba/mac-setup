@@ -13,18 +13,18 @@ brew upgrade && brew update
 
 brew install mas            # Apple store cli
 
+# printf "AppStore: Installing Xcode\n"
+# mas install 497799835
+
 printf "Installing xcode cli utils\n"
 xcode-select --install
 
 printf "brew: Installing cli packages\n"
-brew install awscli
 brew install azure-cli
 brew install ca-certificates
 brew install git
 brew install node           # NodeJS dev
-brew install n
 brew install openssl        # Generate certificates
-brew install starship
 brew install vim            # Guilty pleasure
 brew install watch
 brew install wget
@@ -36,10 +36,11 @@ chsh -s /usr/local/bin/zsh
 /usr/local/bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+
 printf "brew: Installing apps\n"
 brew install --cask firefox
 brew install --cask google-chrome
-brew install --cask grammarly
+# brew install --cask grammarly
 brew install --cask handbrake
 brew install --cask iterm2
 brew install --cask java
@@ -62,15 +63,14 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-
-printf "AppStore: Installing Bitwarden\n"
-mas install 1352778147
-
 printf "AppStore: Installing The Unarchiver\n"
 mas install 425424353
 
-printf "AppStore: Installing Magnet\n"
-mas install 441258766
+# printf "AppStore: Installing Magnet\n"
+# mas install 441258766
+
+printf "AppStore: Installing Microsoft Remote Desktop 10\n"
+mas install 1295203466
 
 printf "AppStore: Installing Microsoft OneDrive\n"
 mas install 823766827
@@ -89,6 +89,9 @@ mas install 462054704
 
 printf "AppStore: Installing Microsoft PowerPoint\n"
 mas install 462062816
+
+printf "AppStore: Installing LastPass Password Manager\n"
+mas install 926036361
 
 
 printf "Installing offline apps..\n"

@@ -1,13 +1,13 @@
 #! /usr/bin/env bash
 
 # Apply machine hostname
-read -p "What is this machine's label (Example: \"Alba-MBPRO\")? " mac_os_label
+read -p "What is this machine's label (Example: \"G0...\")? " mac_os_label
 if [[ -z "$mac_os_label" ]]; then
     printf "ERROR: Invalid MacOS label.\n"
     exit 1
 fi
 
-read -p "What is this machine's name (Example: \"Alba-MBPRO\")? " mac_os_name
+read -p "What is this machine's name (Example: \"ernie\")? " mac_os_name
 if [[ -z "$mac_os_name" ]]; then
     printf "ERROR: Invalid MacOS name.\n"
     exit 1
@@ -67,7 +67,7 @@ printf "System - Don't chime when power is plugged in\n"
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool false
 
 printf "System - Disable autocorrect\n"
-defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+# defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
 printf "System - Disable Bonjour\n"
 sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist ProgramArguments -array-add "-NoMulticastAdvertisements"
@@ -79,7 +79,7 @@ printf "Dock - Remove all default app icons\n"
 defaults write com.apple.dock persistent-apps -array
 
 printf "Dock - Don't show recently used apps"
-defaults write com.apple.dock show-recents -bool false
+# defaults write com.apple.dock show-recents -bool false
 
 printf "Dock - Automatically hide and show\n"
 defaults write com.apple.dock autohide -bool true
@@ -96,7 +96,7 @@ printf "Dock - Don’t show Dashboard as a Space\n"
 # defaults write com.apple.dock "dashboard-in-overlay" -bool true
 
 printf "iCloud - Save to disk by default\n"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+# defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 printf "Finder - Show the $HOME/Library folder\n"
 chflags nohidden $HOME/Library
