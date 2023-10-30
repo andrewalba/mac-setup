@@ -1,6 +1,6 @@
 # MacOS Setup Scripts
 
-This is based on script found by [Martijn Smit](https://github.com/smitmartijn/MacOS-Setup)
+This is based on script I found written by [Martijn Smit](https://github.com/smitmartijn/MacOS-Setup)
 
 These scripts complete my MacOS configuration by changing a bunch of MacOS settings (init_os_settings.sh) and installing my base applications (install_apps.sh).
 
