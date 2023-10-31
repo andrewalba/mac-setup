@@ -47,6 +47,7 @@ brew install --cask ngrok
 brew install --cask postman
 brew install --cask powershell
 brew install --cask raycast
+brew install --cask sourcetree            # Bitbucket git UI
 brew install --cask sublime-text          # Look at purchasing for devs
 brew install --cask visual-studio-code
 brew install --cask vlc
