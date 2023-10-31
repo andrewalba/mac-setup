@@ -24,6 +24,8 @@ brew install azure-cli
 brew install ca-certificates
 brew install git
 brew install node           # NodeJS dev
+brew install n              # Node manager
+brew install unixodbc       # Required by IBMiAcc
 brew install openssl        # Generate certificates
 brew install vim            # Guilty pleasure
 brew install watch
@@ -48,6 +50,7 @@ brew install --cask ngrok
 brew install --cask postman
 brew install --cask powershell
 brew install --cask raycast
+brew install --cask sourcetree            # Bitbucket git UI
 brew install --cask sublime-text          # Look at purchasing for devs
 brew install --cask visual-studio-code
 brew install --cask vlc
