@@ -8,6 +8,8 @@ These scripts will work on a freshly installed MacOS device. It uses [Homebrew](
 
 There's also the directory 'offline-apps/' and the install_apps.sh script runs to all downloaded .pkg files and installs them as well. At the bottom of install_apps.sh is also a list of URLs to DMG files that it will download, mount and detect whether to just move it to /Applications or use the installer cli.
 
+**Note:** Updated the brew list and added prefix to the `brew install` command to account for Apple Silicon devices.
+
 # Steps
 
 ```shell
