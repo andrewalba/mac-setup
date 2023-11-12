@@ -17,17 +17,18 @@ printf "Installing xcode cli utils\n"
 xcode-select --install
 
 printf "brew: Installing cli packages\n"
-arch -arm4 brew install awscli
-arch -arm4 brew install azure-cli
-arch -arm4 brew install ca-certificates
-arch -arm4 brew install git
-arch -arm4 brew install node           # NodeJS dev
-arch -arm4 brew install n
-arch -arm4 brew install openssl        # Generate certificates
-arch -arm4 brew install starship
-arch -arm4 brew install vim            # Guilty pleasure
-arch -arm4 brew install watch
-arch -arm4 brew install wget
+arch -arm64 brew install awscli
+arch -arm64 brew install azure-cli
+arch -arm64 brew install bitwarden-cli
+arch -arm64 brew install ca-certificates
+arch -arm64 brew install git
+arch -arm64 brew install node           # NodeJS dev
+arch -arm64 brew install n
+arch -arm64 brew install openssl        # Generate certificates
+arch -arm64 brew install starship
+arch -arm64 brew install vim            # Guilty pleasure
+arch -arm64 brew install watch
+arch -arm64 brew install wget
 
 # Install ZSH and Oh My ZSH
 arch --arm64 brew install zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
