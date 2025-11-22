@@ -1,0 +1,82 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$aws\
+$shell\
+$fill\
+$nodejs\
+$php\
+$docker_context\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+# Command Timeout (for PHP)
+command_timeout = 1000
+
+[shell]
+zsh_indicator = ""
+bash_indicator = ""
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
+
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[docker_context]
+format = "[$symbol$context]($style) "
+symbol = "🐳 "
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+disabled = false
+
+[battery]
+format = "[$symbol$percentage]($style) "
+
+[fill]
+symbol = " "
+
+[aws]
+symbol = "☁️ "
+format = '[$symbol($profile ) (\($region\) )(\[$duration\] )]($style)'
+style = "bold yellow"
+
+[directory]
+style = "blue"
+read_only = "🔒"
+truncation_length = 4
+truncate_to_repo = false
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+[php]
+symbol = "🐘 "
+format = "[$symbol($version )]($style)"
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+
+[jobs]
+symbol = "✦"
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[memory_usage]
+symbol = "🐏"
+
+[time]
+disabled = false
+style = "bold white"
